@@ -1,4 +1,4 @@
-name: Build and push docker image.
+name: Build and push docker image
 
 on:
   push:
@@ -36,6 +36,4 @@ jobs:
 
     - name: Docker push
       run: |
-        docker tag netflix_backend:latest 348230509416.dkr.ecr.us-east-2.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
-        docker push 348230509416.dkr.ecr.us-east-2.amazonaws.com/netflix_backend:${GITHUB_RUN_NUMBER}
 
