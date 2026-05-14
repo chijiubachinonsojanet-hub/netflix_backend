@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM 
 
 # Install necessary packages
 #============================
